@@ -7,7 +7,7 @@ public:
     if (strs.size() == 0)
       return answer;
 
-    for (int i = 0; i < str.size(); i++) {
+    for (int i = 0; i < str.size(); i++) { // iterate  into the   first  string  and compare it 
       for (int j = 0; j < strs.size(); j++) {
         // cout << strs[j][i];
         if (strs[j][i] != str[i]) {
