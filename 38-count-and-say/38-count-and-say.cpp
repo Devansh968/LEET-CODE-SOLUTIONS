@@ -8,8 +8,8 @@ public:
         {
         string t = "";
             
-     s = s+ '&';
-            int c =1;
+        s = s+ '&';
+        int c =1;
             
             for(int  j = 1;j<s.length();j++)
             {
@@ -18,6 +18,7 @@ public:
                 t =  t+s[j-1];
                 c=1;
                 }
+                    
                 else c++;
             }
             s=t;
