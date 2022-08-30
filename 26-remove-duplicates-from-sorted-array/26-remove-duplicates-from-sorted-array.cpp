@@ -9,3 +9,6 @@ public:
         return  nums.size()-count;
     }
 };
+
+//0011122334     count= 1+1
+ //Nums = 0 1
