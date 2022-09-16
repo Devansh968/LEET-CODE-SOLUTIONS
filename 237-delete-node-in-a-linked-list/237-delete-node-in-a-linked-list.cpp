@@ -14,6 +14,5 @@ public:
          node->next =  temp->next;
          temp->next = NULL;
          delete(temp);
-        
         }
 };
