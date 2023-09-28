@@ -96,12 +96,12 @@ class Solution{
         // Your code here
         if(!root) return 0;
         
-        int  l  = minDepth(root->left)+1;
-        int r  = minDepth(root->right)+1;
+        int  l  = minDepth(root->left);
+        int r  = minDepth(root->right);
         
-        if(root->left && root->right)  return min(l,r);
+        if(root->left && root->right)  return min(l,r)+1;
         else{
-            return max(l,r);
+            return max(l,r)+1;
         }
     }
 };
