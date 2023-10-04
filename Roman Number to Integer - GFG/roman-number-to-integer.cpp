@@ -23,15 +23,13 @@ class Solution {
         int ans =0;
         int  n  = s.size();
           ans=mp[s[n-1]];
-        for(int i=n-2;i>=0;i--)
-        {
-            if(mp[s[i]]<mp[s[i+1]])
+        for(int  i = n-2;i>=0;i--){
+            if(mp[s[i]]  < mp[s[i+1]])
             {
-                ans=ans-mp[s[i]];
+            ans  =  ans - mp[s[i]];
             }
-            else
-            {
-                ans+=mp[s[i]];
+            else{
+                ans  = ans + mp[s[i]];
             }
         }
         return ans;
