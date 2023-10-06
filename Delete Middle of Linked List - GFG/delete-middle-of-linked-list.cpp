@@ -92,6 +92,8 @@ Node* deleteMid(Node* head)
         
     }
     p->next =  slow->next;
+    slow->next =NULL;
+    delete(slow);
     return  head;
     
     
