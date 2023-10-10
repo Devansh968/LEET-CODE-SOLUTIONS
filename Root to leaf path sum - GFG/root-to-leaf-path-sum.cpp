@@ -88,7 +88,7 @@ struct Node
 complete this function */
 class Solution
 {
-   public:
+     public:
      bool ans=0;
      void solve(Node* root,int s,int temp)
      {
@@ -116,9 +116,6 @@ class Solution
     return ans;
 }
 };
-
- 
-
 
 
 //{ Driver Code Starts.
