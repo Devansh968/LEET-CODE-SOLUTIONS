@@ -14,18 +14,18 @@ public:
         int  l =0,h = n-1;
         int ans;
         while(l<=h){
-            int mid  = (l+h)/2;
-            
-            if(arr[mid]  == 0){
-                ans  =  mid;
-                h = mid-1;
-            }
-            else{
-         l  =  mid +1;
-        }
+         int  mid = (h+l)/2;
+         
+         if(arr[mid]  == 0){
+             ans = mid;
+             h = mid-1;
+             
+         }
+         else{
+             l = mid+1;
+         }
         }
         return n-ans;
-    
     }
 };
 
