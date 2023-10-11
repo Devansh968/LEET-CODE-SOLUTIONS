@@ -103,24 +103,29 @@ struct Node
 
 class Solution{
     public:
-    int  f =1;
+    int f =1;
     
-    int func(Node* root){
+    int solve(Node* root){
         if(!root) return 0;
         
-        int  l = func(root->left);
-        int r  = func(root->right);
-    
-       if(abs(l-r)>1) f=0;
-       
-       return max(l,r)+1;
+        int l  = solve(root->left);
+        int r  =  solve(root->right);
+        
+        if(abs(l-r) > 1)  f=0;
+        
+        
+        return max(l,r)+1;
     }
     
+    
+    
+    //Function to check whether a binary tree is balanced or not.
     bool isBalanced(Node *root)
     {
-        f =1;
-      func(root);
-      return f;
+        //  Your Code here
+        f=1;
+        solve(root);
+        return f;
     }
 };
 
