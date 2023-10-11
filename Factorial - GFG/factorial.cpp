@@ -6,14 +6,36 @@ using namespace std;
 class Solution{
 public:
     long long int factorial(int N){
-        //code herei
-        if(N ==1  || N==0 ){
-            return 1;
-        }
+      long  long int fac=1;    
+      if(N==1 || N==0){
+          return 1;
+      }  
+      for(int  i =1;i<=N;i++){
+          fac *=i;
+      }
+      return fac;
+    }  
+    };     
         
-        return N*factorial(N-1);
-    }
-};
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    //     //code herei
+    //     if(N ==1  || N==0 ){
+    //         return 1;
+    //     }
+        
+    //     return N*factorial(N-1);
+    // }
 
 //{ Driver Code Starts.
 int main() 
