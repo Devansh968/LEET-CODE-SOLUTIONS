@@ -17,7 +17,7 @@ class Solution
         for(int i =0;i<n;i++){
             mp[arr[i]]++;
         }
-        int ans ;
+        int ans = -1 ;
         for(auto x:mp){
             
             if(x.second ==1){
